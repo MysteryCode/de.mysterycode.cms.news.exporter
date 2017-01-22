@@ -9,7 +9,7 @@ use wcf\util\StringUtil;
 /**
  * Exporter to export news from cnews (WCF 1.1).
  */
-class Cnews1xToNewsExporter extends AbstractExporter {
+class CNews1xToNewsExporter extends AbstractExporter {
 	/**
 	 * @inheritDoc
 	 */
