@@ -12,9 +12,19 @@
 			<classname>cms\system\exporter\CNews1xToNewsExporter</classname>
 		</type>
 		<type>
-			<name>com.woltlab.wcf.exporter.fireballNews1tToFireballNews</name>
+			<name>com.woltlab.wcf.exporter.fireballNews1ToFireballNews</name>
 			<definitionname>com.woltlab.wcf.exporter</definitionname>
 			<classname>cms\system\exporter\Fireball1NewsExporter</classname>
+		</type>
+		<type>
+			<name>com.woltlab.wcf.exporter.fireballNews2ToFireballNews</name>
+			<definitionname>com.woltlab.wcf.exporter</definitionname>
+			<classname>cms\system\exporter\Fireball2NewsExporter</classname>
+		</type>
+		<type>
+			<name>com.woltlab.wcf.exporter.fireballNews2tToArticle</name>
+			<definitionname>com.woltlab.wcf.exporter</definitionname>
+			<classname>cms\system\exporter\Fireball2NewsToArticleExporter</classname>
 		</type>
 	</import>
 </data>
