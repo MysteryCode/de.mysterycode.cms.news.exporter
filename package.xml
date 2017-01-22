@@ -22,13 +22,14 @@
 	</excludedpackages>
 
 	<instructions type="install">
-		<!-- lang -->
 		<instruction type="language" />
-
-		<!-- tar -->
 		<instruction type="file" application="cms" />
-
-		<!-- xml -->
 		<instruction type="objectType" />
     </instructions>
+
+	<instructions type="update" fromversion="1.0.0 Alpha *">
+		<instruction type="language" />
+		<instruction type="file" application="cms" />
+		<instruction type="objectType" />
+	</instructions>
 </package>
