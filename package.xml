@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="de.codequake.cms.news.exporter" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/package.xsd">
+	<packageinformation>
+		<packagename><![CDATA[Fireball CMS - Nachrichtensystem: Exporter]]></packagename>
+		<packagedescription><![CDATA[Exporter für das Fireball Newssystem]]></packagedescription>
+		<version><![CDATA[1.0.0 Alpha 1]]></version>
+		<date><![CDATA[2017-01-22]]></date>
+	</packageinformation>
+
+	<authorinformation>
+		<author>MysteryCode</author>
+		<authorurl>https://www.mysterycode.de/</authorurl>
+	</authorinformation>
+
+	<requiredpackages>
+		<requiredpackage minversion="2.1.0">com.woltlab.wcf</requiredpackage>
+		<requiredpackage minversion="1.2.0">de.codequake.cms.news</requiredpackage>
+	</requiredpackages>
+
+	<excludedpackages>
+		<excludedpackage version="3.0.0 Alpha 1">com.woltlab.wcf</excludedpackage>
+	</excludedpackages>
+
+	<instructions type="install">
+		<!-- lang -->
+		<instruction type="language" />
+
+		<!-- tar -->
+		<instruction type="file" application="cms" />
+
+		<!-- xml -->
+		<instruction type="objectType">xml/objectType.xml</instruction>
+    </instructions>
+</package>
