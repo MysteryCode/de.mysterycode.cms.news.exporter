@@ -184,16 +184,6 @@ class Fireball2NewsToArticleExporter extends AbstractFireballNewsExporter {
 		while ($row = $statement->fetchArray()) {
 			$additionalData = array();
 
-			$sql = 'SELECT	*
-				FROM	cms' . $this->dbNo . '_news_to_category
-				WHERE 	newsID = ?';
-			$statement2 = $this->database->prepareStatement($sql);
-			$statement2->execute(array($row['newsID']));
-			while ($assignment = $statement2->fetchArray()) {
-				// categories
-				$additionalData['categories'][] = $assignment['categoryID'];
-			}
-
 			$additionalData['contents'] = [
 				!empty($row['languageCode']) ? $row['languageCode'] : 0 => [
 					'title' => $row['subject'],
